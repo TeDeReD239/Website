@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест | 3D-печать и моделирование</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">3D<span>Course</span></a>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="lectures.html">Лекции</a>
+                <a href="methodology.html">Методичка</a>
+                <a href="test.html" class="active">Тест</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <div class="progress-circle" id="progressCircle" title="Прогресс курса">
+                    <svg viewBox="0 0 36 36">
+                        <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="progress-fill" id="progressFill" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text id="progressText" x="18" y="20.5" text-anchor="middle">0%</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Итоговый тест</h1>
+            <p>34 вопроса по всем темам курса. Выберите правильный вариант ответа.</p>
+        </div>
+
+        <div class="test-container">
+            <div class="test-info">
+                <div class="test-progress">
+                    <span>Вопрос <span id="currentQuestion">1</span> из <span id="totalQuestions">34</span></span>
+                    <div class="test-progress-bar">
+                        <div class="test-progress-fill" id="testProgressFill"></div>
+                    </div>
+                </div>
+                <div class="test-stats">
+                    <span>✅ Пройденно: <span id="correctCount">0</span></span>
+                    <span>⏳ Осталось: <span id="remainingCount">34</span></span>
+                </div>
+            </div>
+
+            <div class="test-question" id="testQuestion">
+                <!-- Вопросы будут загружены из course-data.js -->
+            </div>
+
+            <div class="test-navigation">
+                <button id="prevBtn" class="nav-btn" disabled>◀ Предыдущий</button>
+                <button id="nextBtn" class="nav-btn">Следующий ▶</button>
+                <button id="submitBtn" class="submit-btn" style="display: none;">Завершить тест</button>
+            </div>
+
+            <!-- Модальное окно с результатом -->
+            <div id="resultModal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <h2>Результаты теста</h2>
+                    <div class="result-score">
+                        <div class="score-number" id="scoreNumber">0</div>
+                        <div class="score-out-of">из 34</div>
+                    </div>
+                    <div class="result-grade" id="resultGrade"></div>
+                    <div class="result-message" id="resultMessage"></div>
+                    <button id="restartTestBtn" class="btn-primary">Пройти заново</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-tips">
+            <h3>📌 Советы</h3>
+            <ul>
+                <li>Внимательно читайте каждый вопрос</li>
+                <li>Вы можете менять ответы до завершения теста</li>
+                <li>Результат сохраняется — при обновлении страницы прогресс не потеряется</li>
+                <li>Для получения оценки необходимо ответить на все вопросы</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Курс по 3D-печати и 3D-моделированию</p>
+    </footer>
+
+    <script src="data/course-data.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

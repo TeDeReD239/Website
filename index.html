@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-печать и моделирование | Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">3D<span>Course</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Главная</a>
+                <a href="lectures.html">Лекции</a>
+                <a href="methodology.html">Методичка</a>
+                <a href="test.html">Тест</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <div class="progress-circle" id="progressCircle" title="Прогресс курса">
+                    <svg viewBox="0 0 36 36">
+                        <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="progress-fill" id="progressFill" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text id="progressText" x="18" y="20.5" text-anchor="middle">0%</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Технологии <span class="gradient-text">3D-печати</span> и <span class="gradient-text">3D-моделирования</span></h1>
+                <p>Полный курс лекций, практических заданий и тестирования для освоения аддитивных технологий</p>
+                <div class="hero-buttons">
+                    <a href="lectures.html" class="btn btn-primary">Начать изучение →</a>
+                    <a href="test.html" class="btn btn-secondary">Пройти тест</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Лекций</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Практических заданий</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">34</div>
+                <div class="stat-label">Тестовых вопроса</div>
+            </div>
+        </section>
+
+        <section class="course-content">
+            <h2>Содержание курса</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">📖</div>
+                    <h3>Лекции</h3>
+                    <p>6 лекций по технологиям 3D-печати, направлениям моделирования, CAD-программам, форматам файлов, слайсерам и проектированию.</p>
+                    <a href="lectures.html" class="card-link">Перейти к лекциям →</a>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Методичка</h3>
+                    <p>5 практических заданий с пошаговыми инструкциями по работе в КОМПАС-3D: выдавливание, вырезание, массивы, вращение и лофт.</p>
+                    <a href="methodology.html" class="card-link">Перейти к методичке →</a>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">📝</div>
+                    <h3>Тест</h3>
+                    <p>34 вопроса для проверки знаний. После прохождения вы получите результат и оценку.</p>
+                    <a href="test.html" class="card-link">Пройти тест →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Курс по 3D-печати и 3D-моделированию</p>
+    </footer>
+
+    <script src="data/course-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

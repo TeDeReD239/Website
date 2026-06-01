@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лекции | 3D-печать и моделирование</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">3D<span>Course</span></a>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="lectures.html" class="active">Лекции</a>
+                <a href="methodology.html">Методичка</a>
+                <a href="test.html">Тест</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <div class="progress-circle" id="progressCircle" title="Прогресс курса">
+                    <svg viewBox="0 0 36 36">
+                        <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="progress-fill" id="progressFill" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text id="progressText" x="18" y="20.5" text-anchor="middle">0%</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Лекции курса</h1>
+            <p>6 лекций по основам 3D-печати и 3D-моделирования</p>
+        </div>
+
+        <div class="lectures-toc">
+            <h3>Содержание</h3>
+            <ul>
+                <li><a href="#lecture1">Лекция №1 — Технологии 3D-печати</a></li>
+                <li><a href="#lecture2">Лекция №2 — Направления 3D-моделирования</a></li>
+                <li><a href="#lecture3">Лекция №3 — CAD-программы для создания модели</a></li>
+                <li><a href="#lecture4">Лекция №4 — Форматы файлов 3D-модели</a></li>
+                <li><a href="#lecture5">Лекция №5 — Слайсеры и работа в них</a></li>
+                <li><a href="#lecture6">Лекция №6 — Проектирование и макетирование</a></li>
+            </ul>
+        </div>
+
+        <div class="lectures-container">
+            <!-- Лекция 1 -->
+            <article id="lecture1" class="lecture-card" data-lecture="1">
+                <div class="lecture-header">
+                    <h2>Лекция №1 «Технологии 3D-печати»</h2>
+                    <button class="mark-read-btn" data-lecture="1">✓ Отметить прочитанной</button>
+                </div>
+                <div class="lecture-content">
+                    <div class="placeholder-content">
+                        <p><strong>Здесь будет текст лекции №1.</strong></p>
+                        <p>▸ Что такое аддитивные и субтрактивные технологии<br>
+                        ▸ FDM — послойное наплавление<br>
+                        ▸ SLA — стереолитография<br>
+                        ▸ DLP — цифровая световая обработка<br>
+                        ▸ SLS — селективное лазерное спекание<br>
+                        ▸ Сравнение технологий и области применения</p>
+                        <hr>
+                        <p><em>Вставьте сюда полный текст лекции из файла «Лекции.docx»</em></p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Лекция 2 -->
+            <article id="lecture2" class="lecture-card" data-lecture="2">
+                <div class="lecture-header">
+                    <h2>Лекция №2 «Направления 3D-моделирования»</h2>
+                    <button class="mark-read-btn" data-lecture="2">✓ Отметить прочитанной</button>
+                </div>
+                <div class="lecture-content">
+                    <div class="placeholder-content">
+                        <p><strong>Здесь будет текст лекции №2.</strong></p>
+                        <p>▸ Инженерное (параметрическое) моделирование<br>
+                        ▸ Полигональное моделирование<br>
+                        ▸ Скульптинг (цифровая скульптура)<br>
+                        ▸ Процедурное моделирование<br>
+                        ▸ Твердотельное моделирование<br>
+                        ▸ Поверхностное и гибридное моделирование</p>
+                        <hr>
+                        <p><em>Вставьте сюда полный текст лекции из файла «Лекции.docx»</em></p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Лекция 3 -->
+            <article id="lecture3" class="lecture-card" data-lecture="3">
+                <div class="lecture-header">
+                    <h2>Лекция №3 «CAD-программы для создания модели»</h2>
+                    <button class="mark-read-btn" data-lecture="3">✓ Отметить прочитанной</button>
+                </div>
+                <div class="lecture-content">
+                    <div class="placeholder-content">
+                        <p><strong>Здесь будет текст лекции №3.</strong></p>
+                        <p>▸ КОМПАС-3D<br>
+                        ▸ FreeCAD<br>
+                        ▸ SolidWorks<br>
+                        ▸ TinkerCAD<br>
+                        ▸ Autodesk Fusion 360<br>
+                        ▸ Blender<br>
+                        ▸ Сравнение CAD-программ</p>
+                        <hr>
+                        <p><em>Вставьте сюда полный текст лекции из файла «Лекции.docx»</em></p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Лекция 4 -->
+            <article id="lecture4" class="lecture-card" data-lecture="4">
+                <div class="lecture-header">
+                    <h2>Лекция №4 «Форматы файлов 3D-модели»</h2>
+                    <button class="mark-read-btn" data-lecture="4">✓ Отметить прочитанной</button>
+                </div>
+                <div class="lecture-content">
+                    <div class="placeholder-content">
+                        <p><strong>Здесь будет текст лекции №4.</strong></p>
+                        <p>▸ STL — самый распространённый формат<br>
+                        ▸ OBJ — поддержка цвета и текстур<br>
+                        ▸ 3MF — современная альтернатива STL<br>
+                        ▸ AMF — улучшенный формат<br>
+                        ▸ STEP и IGES — инженерные форматы<br>
+                        ▸ Сравнение форматов и типичные ошибки</p>
+                        <hr>
+                        <p><em>Вставьте сюда полный текст лекции из файла «Лекции.docx»</em></p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Лекция 5 -->
+            <article id="lecture5" class="lecture-card" data-lecture="5">
+                <div class="lecture-header">
+                    <h2>Лекция №5 «Слайсеры и работа в них»</h2>
+                    <button class="mark-read-btn" data-lecture="5">✓ Отметить прочитанной</button>
+                </div>
+                <div class="lecture-content">
+                    <div class="placeholder-content">
+                        <p><strong>Здесь будет текст лекции №5.</strong></p>
+                        <p>▸ Принцип работы слайсера<br>
+                        ▸ Основные параметры печати<br>
+                        ▸ Поддержки и адгезия<br>
+                        ▸ Популярные слайсеры (Ultimaker Cura, PrusaSlicer, Simplify3D)<br>
+                        ▸ Этапы работы в слайсере<br>
+                        ▸ Типичные ошибки</p>
+                        <hr>
+                        <p><em>Вставьте сюда полный текст лекции из файла «Лекции.docx»</em></p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Лекция 6 -->
+            <article id="lecture6" class="lecture-card" data-lecture="6">
+                <div class="lecture-header">
+                    <h2>Лекция №6 «Проектирование и макетирование изделий»</h2>
+                    <button class="mark-read-btn" data-lecture="6">✓ Отметить прочитанной</button>
+                </div>
+                <div class="lecture-content">
+                    <div class="placeholder-content">
+                        <p><strong>Здесь будет текст лекции №6.</strong></p>
+                        <p>▸ Особенности проектирования под 3D-печать<br>
+                        ▸ Учёт допусков и соединений<br>
+                        ▸ Макетирование и прототипирование<br>
+                        ▸ Этапы разработки изделия<br>
+                        ▸ Оптимизация моделей<br>
+                        ▸ Модульное проектирование</p>
+                        <hr>
+                        <p><em>Вставьте сюда полный текст лекции из файла «Лекции.docx»</em></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar-label">Прогресс изучения лекций:</div>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="lecturesProgressFill"></div>
+            </div>
+            <div class="progress-bar-percent" id="lecturesProgressPercent">0%</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Курс по 3D-печати и 3D-моделированию</p>
+    </footer>
+
+    <script src="data/course-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
