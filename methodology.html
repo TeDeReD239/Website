@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методичка | 3D-печать и моделирование</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">3D<span>Course</span></a>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="lectures.html">Лекции</a>
+                <a href="methodology.html" class="active">Методичка</a>
+                <a href="test.html">Тест</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                    <div class="progress-circle" id="progressCircle" title="Прогресс курса">
+                    <svg viewBox="0 0 36 36">
+                        <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="progress-fill" id="progressFill" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text id="progressText" x="18" y="20.5" text-anchor="middle">0%</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Практические задания (Методичка)</h1>
+            <p>5 заданий для освоения работы в КОМПАС-3D</p>
+        </div>
+
+        <!-- Кнопка скачивания полной методички -->
+        <div class="download-section">
+            <div class="download-card">
+                <div class="download-icon">📥</div>
+                <div class="download-text">
+                    <h3>Полная версия методички</h3>
+                    <p>Подробные пошаговые инструкции ко всем 5 заданиям в одном файле</p>
+                </div>
+                <a href="https://disk.yandex.ru/i/W28DQZIhLNCYLg" class="download-btn" id="downloadMethodologyBtn" target="_blank">
+                    Скачать методичку 📄
+                </a>
+            </div>
+        </div>
+
+        <div class="methodology-toc">
+            <h3>Содержание</h3>
+            <ul>
+                <li><a href="#task1">Задание №1 — Выдавливание</a></li>
+                <li><a href="#task2">Задание №2 — Вырезание выдавливанием</a></li>
+                <li><a href="#task3">Задание №3 — Скругления, фаски и массивы</a></li>
+                <li><a href="#task4">Задание №4 — Операция вращения</a></li>
+                <li><a href="#task5">Задание №5 — Сборка деталей</a></li>
+            </ul>
+        </div>
+
+        <div class="methodology-container">
+            <!-- Задание 1 -->
+            <article id="task1" class="task-card" data-task="1">
+                <div class="task-header">
+                    <h2>Задание №1 — Освоение функции выдавливания</h2>
+                    <button class="mark-complete-btn" data-task="1">✓ Отметить выполненным</button>
+                </div>
+                <div class="task-content">
+                    <div class="task-summary">
+                        <div class="task-meta">
+                            <div><strong>🎯 Цель:</strong> Освоение функции выдавливания в КОМПАС-3D.</div>
+                            <div><strong>🛠️ Инструменты:</strong> Элемент выдавливания, эскиз, прямоугольник, окружность, авторазмер, геометрические ограничения, плоскости ZX, верхняя и боковая плоскости.</div>
+                            <div><strong>📌 Краткое описание:</strong> Создание детали, состоящей из прямоугольного основания, цилиндрического выступа и призматического элемента, расположенного на боковой грани.</div>
+                        </div>
+                        <div class="task-comment">
+                            <strong>💬 Комментарий:</strong> В задании отрабатываются базовые навыки построения эскизов на разных плоскостях, использование операции выдавливания с разной глубиной, включая выдавливание «до ближайшей поверхности».
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Задание 2 -->
+            <article id="task2" class="task-card" data-task="2">
+                <div class="task-header">
+                    <h2>Задание №2 — Освоение функции вырезания выдавливанием</h2>
+                    <button class="mark-complete-btn" data-task="2">✓ Отметить выполненным</button>
+                </div>
+                <div class="task-content">
+                    <div class="task-summary">
+                        <div class="task-meta">
+                            <div><strong>🎯 Цель:</strong> Освоение операции вырезания выдавливанием.</div>
+                            <div><strong>🛠️ Инструменты:</strong> Элемент выдавливания, вырезание выдавливанием, эскиз, прямоугольник, окружность, авторазмер, плоскости.</div>
+                            <div><strong>📌 Краткое описание:</strong> Создание детали на основе прямоугольного основания с добавлением цилиндрического прилива, сквозного отверстия и бокового паза, созданного вырезанием до ближайшей плоскости.</div>
+                        </div>
+                        <div class="task-comment">
+                            <strong>💬 Комментарий:</strong> Задание закрепляет навыки выдавливания и знакомит с обратной операцией — вырезанием. Особое внимание уделяется созданию сквозных отверстий и пазов.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Задание 3 -->
+            <article id="task3" class="task-card" data-task="3">
+                <div class="task-header">
+                    <h2>Задание №3 — Скругления, фаски и массивы</h2>
+                    <button class="mark-complete-btn" data-task="3">✓ Отметить выполненным</button>
+                </div>
+                <div class="task-content">
+                    <div class="task-summary">
+                        <div class="task-meta">
+                            <div><strong>🎯 Цель:</strong> Освоение операций скругления, создания фасок и построения массивов.</div>
+                            <div><strong>🛠️ Инструменты:</strong> Скругление, фаска, массив по сетке, вырезание выдавливанием, эскиз, окружность, прямоугольник.</div>
+                            <div><strong>📌 Краткое описание:</strong> Создание детали с двумя отверстиями (сквозным Ø10 мм и углублением Ø20 мм глубиной 5 мм), фасками и скруглениями на отверстиях, а также массивом из четырёх вертикальных выступов по углам основания.</div>
+                        </div>
+                        <div class="task-comment">
+                            <strong>💬 Комментарий:</strong> Задание демонстрирует возможности массового создания элементов через массив 2×2, а также применение фасок и скруглений для обработки кромок.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Задание 4 -->
+            <article id="task4" class="task-card" data-task="4">
+                <div class="task-header">
+                    <h2>Задание №4 — Операция вращения</h2>
+                    <button class="mark-complete-btn" data-task="4">✓ Отметить выполненным</button>
+                </div>
+                <div class="task-content">
+                    <div class="task-summary">
+                        <div class="task-meta">
+                            <div><strong>🎯 Цель:</strong> Освоение операции вращения и работы с дугами в эскизе.</div>
+                            <div><strong>🛠️ Инструменты:</strong> Элемент вращения, эскиз, прямоугольник, дуга по трём точкам, усечь кривую, фаска, плоскость ZY.</div>
+                            <div><strong>📌 Краткое описание:</strong> Создание тела вращения на основе эскиза, включающего прямоугольник 15×5 мм, смещённый на 5 мм от оси, и дугу радиусом 12 мм. На внутреннем отверстии выполнена фаска 2 мм.</div>
+                        </div>
+                        <div class="task-comment">
+                            <strong>💬 Комментарий:</strong> Задание знакомит с альтернативным способом создания деталей — вращением эскиза вокруг оси. Особое внимание уделено построению дуги и использованию инструмента «Усечь кривую».
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Задание 5 -->
+            <article id="task5" class="task-card" data-task="5">
+                <div class="task-header">
+                    <h2>Задание №5 — Сборка из моделей предыдущих заданий</h2>
+                    <button class="mark-complete-btn" data-task="5">✓ Отметить выполненным</button>
+                </div>
+                <div class="task-content">
+                    <div class="task-summary">
+                        <div class="task-meta">
+                            <div><strong>🎯 Цель:</strong> Освоение создания сборки из нескольких деталей.</div>
+                            <div><strong>🛠️ Инструменты:</strong> Сборка (ассемблер), добавление компонентов, сопряжения (соосность, совпадение), фиксация положения.</div>
+                            <div><strong>📌 Краткое описание:</strong> Сборка изделия из четырёх деталей, созданных в предыдущих заданиях. Детали последовательно фиксируются относительно центрального цилиндра Детали №1 с помощью сопряжений «Соосность» и «Совпадение».</div>
+                        </div>
+                        <div class="task-comment">
+                            <strong>💬 Комментарий:</strong> Итоговое задание, объединяющее все ранее созданные детали в единую сборку. Отрабатываются навыки работы с сопряжениями и проверки пересечений компонентов.
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar-label">Прогресс выполнения заданий:</div>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="tasksProgressFill"></div>
+            </div>
+            <div class="progress-bar-percent" id="tasksProgressPercent">0%</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Курс по 3D-печати и 3D-моделированию</p>
+    </footer>
+
+    <script src="data/course-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
