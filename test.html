@@ -19,6 +19,7 @@
             </div>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle">🌙</button>
+                <button class="reset-progress-btn" id="resetProgressBtn" title="Сбросить прогресс">🗑️</button>
                 <div class="progress-circle" id="progressCircle" title="Прогресс курса">
                     <svg viewBox="0 0 36 36">
                         <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
@@ -33,25 +34,25 @@
     <main>
         <div class="page-header">
             <h1>Итоговый тест</h1>
-            <p>34 вопроса по всем темам курса. Выберите правильный вариант ответа.</p>
+            <p>9 вопросов разных типов. Проверьте свои знания!</p>
         </div>
 
         <div class="test-container">
             <div class="test-info">
                 <div class="test-progress">
-                    <span>Вопрос <span id="currentQuestion">1</span> из <span id="totalQuestions">34</span></span>
+                    <span>Вопрос <span id="currentQuestion">1</span> из <span id="totalQuestions">9</span></span>
                     <div class="test-progress-bar">
                         <div class="test-progress-fill" id="testProgressFill"></div>
                     </div>
                 </div>
                 <div class="test-stats">
-                    <span>✅ Пройденно: <span id="correctCount">0</span></span>
-                    <span>⏳ Осталось: <span id="remainingCount">34</span></span>
+                    <span>✅ Отвечено: <span id="answeredCount">0</span></span>
+                    <span>⏳ Осталось: <span id="remainingCount">9</span></span>
                 </div>
             </div>
 
             <div class="test-question" id="testQuestion">
-                <!-- Вопросы будут загружены из course-data.js -->
+                <!-- Вопросы будут загружены динамически -->
             </div>
 
             <div class="test-navigation">
@@ -59,37 +60,27 @@
                 <button id="nextBtn" class="nav-btn">Следующий ▶</button>
                 <button id="submitBtn" class="submit-btn" style="display: none;">Завершить тест</button>
             </div>
-
-            <!-- Модальное окно с результатом -->
-            <div id="resultModal" class="modal">
-                <div class="modal-content">
-                    <span class="modal-close">&times;</span>
-                    <h2>Результаты теста</h2>
-                    <div class="result-score">
-                        <div class="score-number" id="scoreNumber">0</div>
-                        <div class="score-out-of">из 34</div>
-                    </div>
-                    <div class="result-grade" id="resultGrade"></div>
-                    <div class="result-message" id="resultMessage"></div>
-                    <button id="restartTestBtn" class="btn-primary">Пройти заново</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="test-tips">
-            <h3>📌 Советы</h3>
-            <ul>
-                <li>Внимательно читайте каждый вопрос</li>
-                <li>Вы можете менять ответы до завершения теста</li>
-                <li>Результат сохраняется — при обновлении страницы прогресс не потеряется</li>
-                <li>Для получения оценки необходимо ответить на все вопросы</li>
-            </ul>
         </div>
     </main>
 
     <footer>
         <p>© 2026 Курс по 3D-печати и 3D-моделированию</p>
     </footer>
+
+    <!-- Модальное окно с результатом -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Результаты теста</h2>
+            <div class="result-score">
+                <div class="score-number" id="scoreNumber">0</div>
+                <div class="score-out-of">из 9</div>
+            </div>
+            <div class="result-grade" id="resultGrade"></div>
+            <div class="result-message" id="resultMessage"></div>
+            <button id="restartTestBtn" class="btn-primary">Пройти заново</button>
+        </div>
+    </div>
 
     <script src="data/course-data.js"></script>
     <script src="js/test.js"></script>
