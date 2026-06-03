@@ -914,3 +914,47 @@ footer {
         align-items: stretch;
     }
 }
+/* Order / Drag & Drop */
+.order-list {
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+    padding: 0.5rem;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: grab;
+}
+
+.order-item:active {
+    cursor: grabbing;
+}
+
+.order-handle {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    cursor: grab;
+}
+
+/* Fill blank */
+.fillblank-input input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+/* Dropdown */
+.dropdown-input select {
+    cursor: pointer;
+}
