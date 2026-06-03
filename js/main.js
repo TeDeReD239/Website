@@ -25,7 +25,7 @@ function updateGlobalProgress() {
     const readLectures = JSON.parse(localStorage.getItem('readLectures') || '[]');
     const completedTasks = JSON.parse(localStorage.getItem('completedTasks') || '[]');
     
-    const totalItems = 11; // 6 лекций + 5 заданий
+    const totalItems = 12; // 6 лекций + 6 заданий
     const completedItems = readLectures.length + completedTasks.length;
     const percentage = Math.round((completedItems / totalItems) * 100);
     
@@ -125,7 +125,7 @@ function updateTasksProgress() {
     
     if (tasksProgressFill) {
         const completedTasks = JSON.parse(localStorage.getItem('completedTasks') || '[]');
-        const percentage = Math.round((completedTasks.length / 5) * 100);
+        const percentage = Math.round((completedTasks.length / 6) * 100);
         tasksProgressFill.style.width = `${percentage}%`;
         if (tasksProgressPercent) {
             tasksProgressPercent.textContent = `${percentage}%`;
